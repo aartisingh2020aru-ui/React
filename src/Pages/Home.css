@@ -1,0 +1,14 @@
+*{
+    margin-left: 20px;
+}
+
+
+
+.text{
+    font-size: 20px;
+    background-color: rgb(255, 232, 127);
+    border: 1px solid aquamarine;
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
