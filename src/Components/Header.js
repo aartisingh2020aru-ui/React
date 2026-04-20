@@ -1,10 +1,11 @@
 import React from "react";
 
-function Header(){
+function Header(props){
     return(
         <>
-        <h1>Hello this is REACT!</h1>
-        <h2>hii this is somthing!</h2>
+        <p>Hello this is REACT!</p>
+        <p>hii this is somthing!</p>
+        <h2>Welcome{props.Name}, {props.Age}</h2>
         </>
 
     );

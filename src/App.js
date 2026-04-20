@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
+import About from './Pages/About';
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
 
     <>
 
-    <Header />
+    <Header Name="Deep Singh" Age="23" />
+    <Header Name="Anjali Singh" Age="23" />
+    <About />
     <Home />
     <Footer />
 
