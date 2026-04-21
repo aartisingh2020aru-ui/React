@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Counter from './Pages/Counter';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
     <Header Name="Deep Singh" Age="23" />
     <Header Name="Anjali Singh" Age="23" />
+    <Counter />
     <About />
     <Home />
     <Footer />
