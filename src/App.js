@@ -8,6 +8,7 @@ import Counter from './Pages/Counter';
 import Conditional from './Pages/Conditional';
 import Ternary from './Pages/Ternary';
 import LogicalAnd from './Pages/LogicalAnd';
+import Studentlist from './Pages/Studentlist';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Conditional />
     <Ternary />
     <LogicalAnd />
+    <Studentlist />
 
 
     </>
