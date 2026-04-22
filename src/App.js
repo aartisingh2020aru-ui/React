@@ -5,6 +5,9 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Counter from './Pages/Counter';
+import Conditional from './Pages/Conditional';
+import Ternary from './Pages/Ternary';
+import LogicalAnd from './Pages/LogicalAnd';
 
 
 function App() {
@@ -18,6 +21,10 @@ function App() {
     <About />
     <Home />
     <Footer />
+    <Conditional />
+    <Ternary />
+    <LogicalAnd />
+
 
     </>
 
