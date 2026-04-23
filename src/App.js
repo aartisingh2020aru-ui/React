@@ -9,13 +9,20 @@ import Conditional from './Pages/Conditional';
 import Ternary from './Pages/Ternary';
 import LogicalAnd from './Pages/LogicalAnd';
 import Studentlist from './Pages/Studentlist';
+import Hooks from './Pages/Hooks';
+import { MyContext } from './Pages/MyContext';
+import Child from './Pages/Child';
+
 
 
 function App() {
   return (
 
     <>
-
+    <MyContext.Provider value= "DSTD">
+      <Child />
+    </MyContext.Provider>
+    <Hooks />
     <Header Name="Deep Singh" Age="23" />
     <Header Name="Anjali Singh" Age="23" />
     <Counter />
@@ -26,6 +33,7 @@ function App() {
     <Ternary />
     <LogicalAnd />
     <Studentlist />
+    
 
 
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Studentlist(){
-
+  
     const users = [{id:1, name:"Aarti"}, {id:2, name:"Anjali"}];
 
     // const students = ["Aarti" , "Anjali", "Sarthak", "Vishal"];
