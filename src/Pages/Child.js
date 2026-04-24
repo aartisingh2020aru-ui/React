@@ -6,7 +6,7 @@ function Child(){
 
     return(
         <h3>Welcome {name} </h3>
-    );
+    ); 
 }
 
 export default Child;

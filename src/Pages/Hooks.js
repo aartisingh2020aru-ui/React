@@ -31,25 +31,49 @@
 
 // -------------------------------------------------------------------------
 
-import React,{useRef} from "react";
+// import React,{useRef} from "react";
 
-function Hooks(){
-    const inputRef = useRef();
+// function Hooks(){
+//     const inputRef = useRef();
 
-    const focusInput = () =>{
-        inputRef.current.focus();
-    };
-
-
-    return(
-        <div>
-            <input ref={inputRef} type="text"/>
-            <button onClick={ focusInput}> focus input</button>
-        </div>
-    );
-}
+//     const focusInput = () =>{
+//         inputRef.current.focus();
+//     };
 
 
+//     return(
+//         <div>
+//             <input ref={inputRef} type="text"/>
+//             <button onClick={ focusInput}> focus input</button>
+//         </div>
+//     );
+// }
 
+// --------------------------------------------------------------------------
+
+import React, {useState, useEffect} from "react";
+
+    function Hooks(){
+        const [users, setUsers] = useState([]);
+
+        useEffect(()=>{
+            fetch("https://jsonplaceholder.typicode.com/users")
+            .then((res)=> res.json())
+            .then((data)=> setUsers(data));
+        },[]);
+
+        return(
+            <div>
+                <h2>User List</h2>
+
+                <ol>
+                {users.map((user)=>(
+                    <li key={user.id}> {user.name}</li>
+                ))}
+                </ol>
+            </div>
+
+        );
+    }
 
 export default Hooks;

@@ -12,6 +12,7 @@ import Studentlist from './Pages/Studentlist';
 import Hooks from './Pages/Hooks';
 import { MyContext } from './Pages/MyContext';
 import Child from './Pages/Child';
+import Controlled from './Pages/Controlled';
 
 
 
@@ -19,8 +20,9 @@ function App() {
   return (
 
     <>
+    <Controlled />
     <MyContext.Provider value= "DSTD">
-      <Child />
+    <Child />
     </MyContext.Provider>
     <Hooks />
     <Header Name="Deep Singh" Age="23" />
