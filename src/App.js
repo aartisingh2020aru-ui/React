@@ -13,6 +13,7 @@ import Hooks from './Pages/Hooks';
 import { MyContext } from './Pages/MyContext';
 import Child from './Pages/Child';
 import Controlled from './Pages/Controlled';
+import Login from './Pages/Login';
 
 
 
@@ -20,6 +21,7 @@ function App() {
   return (
 
     <>
+    <Login /><br/><hr/>
     <Controlled />
     <MyContext.Provider value= "DSTD">
     <Child />

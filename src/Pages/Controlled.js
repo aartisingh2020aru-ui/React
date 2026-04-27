@@ -17,25 +17,52 @@
 //     );
 // }
 
-// -------------------------------------------------------------------------
+// ---------------------------uncontrolled----------------------------------------------
 
 
-import React, {useRef} from "react";
+// import React, {useRef} from "react";
+
+// function Controlled(){
+//     const inputRef = useRef();  
+
+//     const handleSubmit = ()=>{
+//         alert(inputRef.current.value);
+//     };
+
+
+//     return (
+//         <div>
+//             <input type="text"  ref={inputRef}/>
+//             <button onClick={handleSubmit}> Submit </button>
+//         </div>
+//     );
+// }
+
+// export default Controlled;
+
+
+
+// ----------------------------------form handling------------------------------------------
+
+import React, {useState} from "react";
 
 function Controlled(){
-    const inputRef = useRef();
+    const [email , setEmail] = useState("");
 
-    const handleSubmit = ()=>{
-        alert(inputRef.current.value);
-    };
+    const handlesubmit = (e)=>{
+        e.preventDefault();
+        alert("Email:" + email);
+    }
 
 
     return (
-        <div>
-            <input type="text"  ref={inputRef}/>
-            <button onClick={handleSubmit}> Submit </button>
-        </div>
-    );
+        <>
+        <form onSubmit={handlesubmit}>
+            <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
+            <button type="submit">Submit</button>
+        </form>
+        </>
+    )
 }
 
-export default Controlled;
+export default Controlled ;

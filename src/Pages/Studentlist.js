@@ -22,4 +22,4 @@ function Studentlist(){
     );
 }
 
-export default Studentlist;
+export default Studentlist;  
