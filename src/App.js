@@ -14,6 +14,7 @@ import { MyContext } from './Pages/MyContext';
 import Child from './Pages/Child';
 import Controlled from './Pages/Controlled';
 import Login from './Pages/Login';
+import Validation from './Pages/Validation';
 
 
 
@@ -21,7 +22,9 @@ function App() {
   return (
 
     <>
-    <Login /><br/><hr/>
+    <br/><br/><br/>
+    <Validation /><br/><hr/><br/>
+    <Login /><br/><hr/><br/><br/><br/><br/>
     <Controlled />
     <MyContext.Provider value= "DSTD">
     <Child />
@@ -37,28 +40,7 @@ function App() {
     <Ternary />
     <LogicalAnd />
     <Studentlist />
-    
-
-
-    </>
-
-     // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-
+  </>
 
   );
 }
