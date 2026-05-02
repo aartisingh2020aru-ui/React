@@ -17,13 +17,25 @@ import Login from './Pages/Login';
 import Validation from './Pages/Validation';
 
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
 
     <>
     <br/><br/><br/>
-    <Validation /><br/><hr/><br/>
+
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Header Name="Deep" Age="23"/>} />
+      <Route path='/About' element={<About/>} />
+    </Routes>
+    </BrowserRouter>
+
+    <br/><br/><br/>
+
+    {/* <Validation /><br/><hr/><br/>
     <Login /><br/><hr/><br/><br/><br/><br/>
     <Controlled />
     <MyContext.Provider value= "DSTD">
@@ -39,7 +51,7 @@ function App() {
     <Conditional />
     <Ternary />
     <LogicalAnd />
-    <Studentlist />
+    <Studentlist /> */}
   </>
 
   );
