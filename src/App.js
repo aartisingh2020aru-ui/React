@@ -26,14 +26,40 @@ function App() {
     <>
     <br/><br/><br/>
 
+
+
+
+
     <BrowserRouter>
+    <Header />
+
+    <hr/>
+    <br/><br/><br/>
+
+
     <Routes>
-      <Route path='/' element={<Header Name="Deep" Age="23"/>} />
+      <Route path='/' element={<Home Name="deep" Age="23"/>} />
       <Route path='/About' element={<About/>} />
+      <Route path='/user/:id' element={<Child/>} />
+      <Route path='/studentlist' element={<Studentlist/>}/>
+      <Route path='/hooks' element={<Hooks/>}/>
+      
     </Routes>
-    </BrowserRouter>
 
     <br/><br/><br/>
+    <hr/>
+
+    <Footer />
+    </BrowserRouter>
+
+
+
+
+
+    <br/><br/><br/>
+
+
+
 
     {/* <Validation /><br/><hr/><br/>
     <Login /><br/><hr/><br/><br/><br/><br/>

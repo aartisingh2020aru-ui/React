@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Header(props){
+function Header(){
     return(
         <>
-        <p>Hello this is REACT!</p>
-        <p>hii this is somthing!</p>
-        <h2>Welcome...{props.Name}, {props.Age}</h2>
+       <p>Header page</p>
+        <h3>
+            <Link to="/">Home </Link>
+            <Link to="/about"> About</Link>
+            <Link to="/user/:id"> Child</Link>
+            <Link to="/studentlist"> Studentlist</Link>
+            <Link to="/hooks"> Hooks</Link>
+        </h3>
         </>
 
     );
