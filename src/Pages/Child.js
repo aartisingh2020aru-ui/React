@@ -11,7 +11,7 @@ function Child(){
     return(
         <>
         <p>user id: {id}</p>
-        <h5>Welcome {name} </h5>
+        <h3>Welcome Child page. {name} </h3>
         </>
     ); 
 }
