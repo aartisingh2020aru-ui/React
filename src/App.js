@@ -24,44 +24,46 @@ function App() {
   return (
 
     <>
-    <br/><br/><br/>
+      <br /><br /><br />
 
 
 
 
 
-    <BrowserRouter>
-    <Header />
+      <BrowserRouter>
+        <div class="ps-page">
+          <Header />
 
-    <hr/>
-    <br/><br/><br/>
-
-
-    <Routes>
-      <Route path='/' element={<Home Name="deep" Age="23"/>} />
-      <Route path='/About' element={<About/>} />
-      <Route path='/user/:id' element={<Child/>} />
-      <Route path='/studentlist' element={<Studentlist/>}/>
-      <Route path='/hooks' element={<Hooks/>}/>
-      
-    </Routes>
-
-    <br/><br/><br/>
-    <hr/>
-
-    <Footer />
-    </BrowserRouter>
+          <hr/>
+          <br/><br/><br/>
 
 
+          <Routes>
+            <Route path='/' element={<Home Name="deep" Age="23" />} />
+            <Route path='/About' element={<About />} />
+            <Route path='/user/:id' element={<Child />} />
+            <Route path='/studentlist' element={<Studentlist />} />
+            <Route path='/hooks' element={<Hooks />} />
+          </Routes>
 
 
+          <br/><br/><br/>
+          <hr/>
 
-    <br/><br/><br/>
+          <Footer />
+        </div>
+      </BrowserRouter>
 
 
 
 
-    {/* <Validation /><br/><hr/><br/>
+
+      <br /><br /><br />
+
+
+
+
+      {/* <Validation /><br/><hr/><br/>
     <Login /><br/><hr/><br/><br/><br/><br/>
     <Controlled />
     <MyContext.Provider value= "DSTD">
@@ -78,7 +80,7 @@ function App() {
     <Ternary />
     <LogicalAnd />
     <Studentlist /> */}
-  </>
+    </>
 
   );
 }
